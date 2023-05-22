@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mario</title>
+    <link rel="stylesheet" type="text/css" href="website.css">
+</head>
+<body>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="#" class ="logo"><img src ="Super mario logo.png" width = "150" height = "100"> </a>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About page.html" class="active">About</a></li>
+            <li><a href="Development page.html">Development</a></li>
+            <li><a href="Reviews page.html">Reviews</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Mario.png" id="Mario">
+        <img src="Background.png" id="Background">
+        <h2 id="text">ABOUT</h2>
+        <img src="Foreground.png" id="Foreground">
+    </section>
+    <div class="sec">
+        <h2>What is the game about?</h2>
+        <p> Super Mario is a video game franchise that follows the adventures of Mario, a heroic plumber, and his companions as they 
+            embark on quests to rescue Princess Peach from the clutches of the primary antagonist, Bowser.<br><br>
+
+            The games typically take place in the fictional Mushroom Kingdom, a colorful and diverse world filled with various themed 
+            levels, including grasslands, deserts, icy landscapes, and underwater environments. Mario must navigate through these levels, 
+            overcoming obstacles, jumping on enemies, and collecting power-ups to aid him in his quest.<br><br>
+
+            The central objective of most Super Mario games is to rescue Princess Peach, who is often kidnapped by Bowser, the leader of 
+            the Koopa Troop, a group of turtle-like creatures. Bowser's motivations vary, but he generally seeks to conquer the Mushroom 
+            Kingdom or marry Peach against her will.<br><br>
+
+            Mario's abilities include running, jumping, and stomping on enemies, which defeats them. Throughout the games, players can discover 
+            power-ups like mushrooms that make Mario grow larger, fire flowers that allow him to shoot fireballs, and stars that grant temporary
+            invincibility.<br><br>
+
+            The franchise's gameplay is known for its precise controls, inventive level design, and a balance of challenging and accessible 
+            gameplay. Players must navigate platforming challenges, defeat enemies, and often face off against powerful bosses in order to 
+            progress.<br><br>
+
+            Super Mario games often incorporate a variety of gameplay elements, such as puzzles, hidden secrets, and side-scrolling or 3D exploration. 
+            Additionally, multiplayer modes and cooperative play are commonly available, allowing friends or family members to join in the fun.
+            <br><br>
+
+            The franchise has expanded beyond traditional platforming, featuring spin-off titles in different genres, including racing (Mario Kart), 
+            sports (Mario Tennis, Mario Golf), and party games (Mario Party). These games showcase the iconic characters from the Super Mario universe 
+            engaging in friendly competition or cooperative gameplay.<br><br>
+
+            Overall, Super Mario is beloved for its charming characters, imaginative worlds, and engaging gameplay. It has become one of the most iconic 
+            and influential franchises in the history of video games, captivating players of all ages for decades.
+
+        </p>
+    </div>
+    <script>
+        let Mario = document.getElementById('Mario');
+        let Background = document.getElementById('Background');
+        let text = document.getElementById('text');
+        let Foreground = document.getElementById('Foreground');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            Background.style.top = value * 1 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            Mario.style.left = value * 2.5 + 'px';
+        })
+    </script>
+
+</body>
+<footer>
+    ©1996-2020 Nintendo
+</footer>
+</html>

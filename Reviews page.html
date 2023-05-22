@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Mario</title>
+    <link rel="stylesheet" type="text/css" href="website.css">
+</head>
+<body>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="#" class ="logo"><img src ="Super mario logo.png" width = "150" height = "100"> </a>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About page.html">About</a></li>
+            <li><a href="Development page.html">Development</a></li>
+            <li><a href="Reviews page.html" class="active">Reviews</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Mario.png" id="Mario">
+        <img src="Background.png" id="Background">
+        <h2 id="text">REVIEWS</h2>
+        <img src="Foreground.png" id="Foreground">
+    </section>
+    <div class="sec">
+        <h2>Reviews</h2>
+        <p>
+            The Mario franchise is a timeless classic that has brought joy to generations of players. With its 
+            charming characters, innovative gameplay, and imaginative worlds, Mario games consistently deliver 
+            fun and engaging experiences." - Game Informer<br><br>
+
+            "Mario's enduring popularity can be attributed to Nintendo's commitment to quality. Each installment 
+            in the franchise is polished, well-designed, and offers a perfect blend of challenge and 
+            accessibility." - GamesRadar<br><br>
+
+            "Mario games embody the essence of pure fun. Whether you're exploring vast 3D landscapes or navigating 
+            challenging platforming levels, Mario's adventures never fail to entertain and captivate players of all 
+            ages." - IGN<br><br>
+
+            "The Mario franchise has set the standard for platforming games. Its tight controls, creative level design, 
+            and iconic power-ups have become benchmarks in the industry, inspiring countless developers to follow in its 
+            footsteps." - GameSpot<br><br>
+
+            "Mario's charm and universality have made him an iconic character in popular culture. From his cheerful 
+            personality to his catchy music and memorable worlds, Mario games are a celebration of imagination and 
+            joy." - The Guardian<br><br>
+
+            The Mario franchise has received numerous awards and accolades over the years, including multiple 
+            "Game of the Year" honors for various titles. It is widely regarded as one of the greatest and most 
+            influential video game franchises of all time.<br><br>
+
+            Overall, the Mario franchise enjoys a reputation for consistently delivering high-quality, enjoyable 
+            experiences that have left a lasting impact on the gaming industry and players worldwide.
+        </p>
+    </div>
+    <script>
+        let Mario = document.getElementById('Mario');
+        let Background = document.getElementById('Background');
+        let text = document.getElementById('text');
+        let Foreground = document.getElementById('Foreground');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            Background.style.top = value * 1 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            Mario.style.left = value * 2.5 + 'px';
+        })
+    </script>
+
+</body>
+<footer>
+    ©1996-2020 Nintendo
+</footer>
+</html>

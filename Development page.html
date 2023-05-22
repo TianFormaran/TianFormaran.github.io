@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Mario</title>
+    <link rel="stylesheet" type="text/css" href="website.css">
+</head>
+<body>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="#" class ="logo"><img src ="Super mario logo.png" width = "150" height = "100"> </a>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About page.html">About</a></li>
+            <li><a href="Development page.html" class="active">Development</a></li>
+            <li><a href="Reviews page.html">Reviews</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Mario.png" id="Mario">
+        <img src="Background.png" id="Background">
+        <h2 id="text">DEVELOPMENT</h2>
+        <img src="Foreground.png" id="Foreground">
+    </section>
+    <div class="sec">
+        <h2>The development phase</h2>
+        <p>The development of Mario began in the early 1980s when Nintendo, a Japanese video game company, was searching for a 
+            flagship character to help them break into the North American video game market. Nintendo's visionary designer, 
+            Shigeru Miyamoto, created the character Mario and his debut game, "Donkey Kong," was released in 1981.<br><br>
+
+            Originally known as "Jumpman," Mario was a carpenter tasked with rescuing his girlfriend, Pauline, from the giant 
+            ape Donkey Kong. The game became a massive success, establishing Mario as a recognizable character and inspiring a 
+            series of sequels and spin-offs.<br><br>
+
+            In 1983, Mario starred in his own game called "Mario Bros." This arcade game introduced Mario's brother, Luigi, and 
+            featured them working together to clear out pests from underground sewers. "Mario Bros." also marked the first 
+            appearance of the iconic green pipes and many gameplay elements that would become staples of the franchise.<br><br>
+
+            The breakthrough for Mario came in 1985 with the release of "Super Mario Bros." for the Nintendo Entertainment System 
+            (NES). This side-scrolling platformer became a global phenomenon and revolutionized the video game industry. It introduced 
+            new gameplay mechanics, such as scrolling levels, power-ups like the Super Mushroom and Fire Flower, and the ability to 
+            save progress through the use of warp zones. "Super Mario Bros." became the best-selling video game of all time at that
+            point and cemented Mario's status as a pop culture icon.<br><br>
+
+            Following the success of "Super Mario Bros.," Nintendo continued to release sequels and spin-offs featuring Mario. 
+            "Super Mario Bros. 2" was released in 1988 and introduced unique gameplay mechanics, such as picking up and throwing objects. 
+            "Super Mario Bros. 3" arrived in 1990, introducing a world map, diverse power-ups, and a multitude of secrets to discover.<br><br>
+
+            With the advent of the Super Nintendo Entertainment System (SNES) in 1990, Mario made the leap to 16-bit graphics. 
+            "Super Mario World" became a launch title for the SNES and is regarded as one of the greatest video games of all time. 
+            It introduced Yoshi, a dinosaur companion for Mario, and showcased vibrant visuals and intricate level design.<br><br>
+
+            In the transition to 3D gaming, Nintendo released "Super Mario 64" in 1996 for the Nintendo 64 console. This groundbreaking 
+            title introduced players to a fully 3D world where they could freely explore and interact with the environment. It set a 
+            new standard for 3D platforming and demonstrated Nintendo's commitment to innovation.<br><br>
+
+            Since then, Mario has continued to evolve across various Nintendo consoles, with notable entries including "Super Mario Sunshine" 
+            (GameCube), "Super Mario Galaxy" (Wii), "New Super Mario Bros." series (Nintendo DS and Wii), and "Super Mario Odyssey" 
+            (Nintendo Switch). These games have pushed the boundaries of gameplay, graphics, and creativity, while maintaining the core 
+            elements that make Mario games so beloved.<br><br>
+
+            Mario's influence extends beyond video games. The character has appeared in animated TV shows, comics, movies, and merchandise, 
+            solidifying his status as one of the most recognizable and enduring icons in popular culture.<br><br>
+
+            In conclusion, the development of Mario is a story of continuous innovation and creative evolution. From his humble beginnings in 
+            "Donkey Kong" to his groundbreaking 3D adventures, Mario's journey has shaped the gaming industry and brought joy to millions of 
+            players worldwide.<br><br>
+        </p>
+    </div>
+    <script>
+        let Mario = document.getElementById('Mario');
+        let Background = document.getElementById('Background');
+        let text = document.getElementById('text');
+        let Foreground = document.getElementById('Foreground');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            Background.style.top = value * 1 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            Mario.style.left = value * 2.5 + 'px';
+        })
+    </script>
+
+</body>
+<footer>
+    ©1996-2020 Nintendo
+</footer>
+</html>

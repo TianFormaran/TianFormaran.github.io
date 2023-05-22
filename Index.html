@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Mario</title>
+    <link rel="stylesheet" type="text/css" href="website.css">
+</head>
+<body>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="#" class ="logo"><img src ="Super mario logo.png" width = "150" height = "100"> </a>
+        <ul>
+            <li><a href="Index.html" class="active">Home</a></li>
+            <li><a href="About page.html">About</a></li>
+            <li><a href="Development page.html">Development</a></li>
+            <li><a href="Reviews page.html">Reviews</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Mario.png" id="Mario">
+        <img src="Background.png" id="Background">
+        <h2 id="text">SUPER MARIO</h2>
+        <img src="Foreground.png" id="Foreground">
+    </section>
+    <div class="sec">
+        <h2>Super Mario Bros.</h2>
+        <p>Super Mario is a renowned video game franchise developed by Nintendo. It first emerged in 1985 with the release of 
+            "Super Mario Bros." The franchise revolves around the adventures of Mario, a plumber, as he embarks on various quests 
+            to rescue Princess Peach from the antagonist, Bowser.<br><br>
+            The original game introduced a side-scrolling platforming concept where players guided Mario through levels, overcoming 
+            obstacles and enemies. Mario's abilities include jumping on enemies to defeat them, collecting power-ups, and navigating 
+            through pipes and underground areas.<br><br>
+            Super Mario quickly gained immense popularity, leading to the creation of numerous sequels and spin-offs across different 
+            Nintendo consoles. Notable entries in the series include "Super Mario Bros. 3," "Super Mario World," "Super Mario 64," 
+            "Super Mario Galaxy," and "Super Mario Odyssey."
+        </p>
+    </div>
+    <script>
+        let Mario = document.getElementById('Mario');
+        let Background = document.getElementById('Background');
+        let text = document.getElementById('text');
+        let Foreground = document.getElementById('Foreground');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            Background.style.top = value * 1 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            Mario.style.left = value * 2.5 + 'px';
+        })
+    </script>
+
+</body>
+<footer>
+    ©1996-2020 Nintendo
+</footer>
+</html>
