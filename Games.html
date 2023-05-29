@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Mario</title>
+    <link rel="stylesheet" type="text/css" href="website.css">
+</head>
+<body>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="#" class ="logo"><img src ="Super mario logo.png" width = "150" height = "100"> </a>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About page.html">About</a></li>
+            <li><a href="Development page.html">Development</a></li>
+            <li><a href="Games.html" class="active">Games</a></li>
+            <li><a href="Reviews page.html">Reviews</a></li>
+            
+        </ul>
+    </header>
+    <section>
+        <img src="Mario.png" id="Mario">
+        <img src="Background.png" id="Background">
+        <h2 id="text">GAMES</h2>
+        <img src="Foreground.png" id="Foreground">
+    </section>
+    <div class="sec">
+        <h2>Super Mario Bros.</h2>
+        <p>
+            Here is a list of mainline Super Mario games released to date:<br><br>
+
+            Super Mario Bros. (1985)<br><br>
+            Super Mario Bros.: The Lost Levels (1986)<br><br>
+            Super Mario Bros. 2 (1988)<br><br>
+            Super Mario Bros. 3 (1988)<br><br>
+            Super Mario Land (1989)<br><br>
+            Super Mario World (1990)<br><br>
+            Super Mario Land 2: 6 Golden Coins (1992)<br><br>
+            Super Mario 64 (1996)<br><br>
+            Super Mario Sunshine (2002)<br><br>
+            New Super Mario Bros. (2006)<br><br>
+            Super Mario Galaxy (2007)<br><br>
+            New Super Mario Bros. Wii (2009)
+            Super Mario Galaxy 2 (2010)<br><br>
+            Super Mario 3D Land (2011)<br><br>
+            New Super Mario Bros. 2 (2012)<br><br>
+            New Super Mario Bros. U (2012)<br><br>
+            Super Mario 3D World (2013)<br><br>
+            Super Mario Maker (2015)<br><br>
+            Super Mario Run (2016)<br><br>
+            Super Mario Odyssey (2017)<br><br>
+            New Super Mario Bros. U Deluxe (2019)<br><br>
+            Super Mario Maker 2 (2019)<br><br>
+            Super Mario 3D All-Stars (2020)<br><br>
+            Super Mario 3D World + Bowser's Fury (2021)<br><br>
+
+            Please note that this list includes mainline entries in the franchise and may not include all spin-offs, remakes, 
+            or re-releases. The Super Mario series has seen numerous iterations and variations across various Nintendo consoles, 
+            handheld devices, and mobile platforms.
+
+        </p>
+    </div>
+    <script>
+        let Mario = document.getElementById('Mario');
+        let Background = document.getElementById('Background');
+        let text = document.getElementById('text');
+        let Foreground = document.getElementById('Foreground');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            Background.style.top = value * 1 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            Mario.style.left = value * 2.5 + 'px';
+        })
+    </script>
+
+</body>
+<footer>
+    ©1996-2020 Nintendo
+</footer>
+</html>
